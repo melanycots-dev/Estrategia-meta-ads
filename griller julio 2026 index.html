@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Griller Canning — Plan de Meta Ads · Julio 2026 (operativo por embudo y edad)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@0,600;0,700;0,900&family=Mulish:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap');
+  :root{
+    --black:#0C0A09;--deep:#12100E;--card:#17130F;--card2:#211A13;--border:rgba(244,244,244,0.10);
+    --gold:#C08A4E;--gold-light:#E7CFA8;--fire:#B50422;--ember:#E2452B;--cream:#F4F4F4;--white:#F4F4F4;
+    --muted:rgba(244,244,244,0.5);--accent:#D8B98E;--accent2:#B08A57;
+    --tofu:#C08A4E;--mofu:#E2452B;--bofu:#B50422;
+    --a1:#7FA081;--a2:#C08A4E;--a3:#C9A37A;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--black);color:var(--white);font-family:'Mulish',sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:700;}
+  .mono{font-family:'DM Mono',monospace;}
+  header.top{padding:56px 48px 40px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:22px;flex-wrap:wrap;background:radial-gradient(ellipse at 12% 0%,rgba(226,69,43,.14),transparent 60%);}
+  .emblem{width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(192,138,78,.45);background:radial-gradient(circle at 50% 35%,rgba(226,69,43,.28),rgba(12,10,9,.9));box-shadow:0 6px 34px rgba(226,69,43,.25);}
+  .emblem span{font-family:'Playfair Display',serif;font-size:32px;font-weight:900;color:var(--gold-light);}
+  header.top .t-k{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:5px;}
+  header.top h1{font-size:27px;line-height:1.12;color:var(--white);}
+  header.top h1 b{color:var(--fire);}
+  header.top .t-sub{font-size:13px;color:var(--muted);margin-top:6px;max-width:640px;}
+  nav{position:sticky;top:0;z-index:50;background:rgba(12,10,9,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);padding:0 48px;display:flex;gap:6px;height:50px;align-items:center;flex-wrap:wrap;}
+  nav a{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:6px 11px;border-radius:4px;}
+  nav a:hover{color:var(--white);background:var(--card);}
+  nav a.t{color:var(--tofu);}nav a.m{color:var(--mofu);}nav a.b{color:#e8677a;}
+  section{max-width:1120px;margin:0 auto;padding:60px 48px;}
+  .sec-k{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+  h2.sec{font-size:26px;color:var(--white);margin-bottom:8px;}
+  .sec-lead{font-size:14px;color:var(--muted);max-width:780px;margin-bottom:8px;line-height:1.6;}
+  .fx{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px;}
+  .fx .c{background:var(--card);border:1px solid var(--border);border-top:3px solid;padding:22px;}
+  .fx .c.t{border-top-color:var(--tofu);}.fx .c.m{border-top-color:var(--mofu);}.fx .c.b{border-top-color:var(--bofu);}
+  .fx .lbl{font-family:'DM Mono',monospace;font-size:13px;letter-spacing:.14em;font-weight:500;margin-bottom:8px;}
+  .fx .c.t .lbl{color:var(--tofu);}.fx .c.m .lbl{color:var(--mofu);}.fx .c.b .lbl{color:#e8677a;}
+  .fx h4{font-family:'Mulish',sans-serif;font-size:14px;font-weight:700;color:var(--white);margin-bottom:6px;}
+  .fx p{font-size:13px;color:rgba(244,244,244,.62);line-height:1.55;}
+  .note{margin-top:18px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--gold);padding:15px 18px;font-size:13px;color:rgba(244,244,244,.74);line-height:1.6;}
+  .note b{color:var(--white);}
+  /* ejes + edades */
+  .ejes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px;}
+  .eje{background:var(--card);border:1px solid var(--border);border-top:3px solid var(--ember);border-radius:4px;padding:18px;}
+  .eje .eh{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+  .eje .ed{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);margin-bottom:8px;}
+  .eje p{font-size:12.5px;color:rgba(244,244,244,.62);line-height:1.5;}
+  .ages{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px;}
+  .agebox{background:var(--card);border:1px solid var(--border);border-left:4px solid;border-radius:4px;padding:18px;}
+  .agebox.a1{border-left-color:var(--a1);}.agebox.a2{border-left-color:var(--a2);}.agebox.a3{border-left-color:var(--a3);}
+  .agebox .an{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.08em;margin-bottom:6px;font-weight:500;}
+  .agebox.a1 .an{color:#9ac2a0;}.agebox.a2 .an{color:var(--gold);}.agebox.a3 .an{color:var(--a3);}
+  .agebox .at{font-family:'Playfair Display',serif;font-size:15px;color:var(--white);margin-bottom:6px;}
+  .agebox p{font-size:12.5px;color:rgba(244,244,244,.62);line-height:1.5;}
+  /* stage */
+  .stage{border-top:1px solid var(--border);}
+  .stage-band{padding:32px 48px;border-left:5px solid;}
+  .stage-band.t{background:rgba(192,138,78,.09);border-left-color:var(--tofu);}
+  .stage-band.m{background:rgba(226,69,43,.08);border-left-color:var(--mofu);}
+  .stage-band.b{background:rgba(181,4,34,.10);border-left-color:var(--bofu);}
+  .stage-band .big{font-family:'Playfair Display',serif;font-size:40px;font-weight:900;line-height:1;}
+  .stage-band.t .big{color:var(--tofu);}.stage-band.m .big{color:var(--mofu);}.stage-band.b .big{color:#e8677a;}
+  .stage-band .obj{font-size:14px;color:var(--white);margin-top:8px;font-weight:500;max-width:820px;}
+  .stage-cols{max-width:1120px;margin:0 auto;padding:28px 48px 6px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .stage-col h4{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+  .stage-col.excl h4{color:#cf7a55;}
+  .stage-col ul{list-style:none;}
+  .stage-col li{font-size:13px;color:rgba(244,244,244,.72);padding:4px 0 4px 16px;position:relative;line-height:1.45;}
+  .stage-col li::before{content:'+';position:absolute;left:0;color:var(--accent2);font-family:'DM Mono',monospace;}
+  .stage-col.excl li::before{content:'–';color:#cf7a55;}
+  .ads-label{max-width:1120px;margin:0 auto;padding:26px 48px 4px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
+  .ads{max-width:1120px;margin:0 auto;padding:12px 48px 44px;display:flex;flex-direction:column;gap:16px;}
+  .ad{background:var(--card);border:1px solid var(--border);border-left:4px solid;border-radius:5px;padding:22px 26px;}
+  .ad.t{border-left-color:var(--tofu);}.ad.m{border-left-color:var(--mofu);}.ad.b{border-left-color:var(--bofu);}
+  .ad-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px;}
+  .ad-name{font-family:'Playfair Display',serif;font-size:20px;color:var(--white);}
+  .ad-badges{display:flex;gap:6px;flex-wrap:wrap;}
+  .ad-badge{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:3px;white-space:nowrap;}
+  .ad.t .ad-badge.stg{background:rgba(192,138,78,.16);color:var(--tofu);}
+  .ad.m .ad-badge.stg{background:rgba(226,69,43,.16);color:var(--ember);}
+  .ad.b .ad-badge.stg{background:rgba(181,4,34,.18);color:#e8677a;}
+  .age{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.05em;padding:4px 9px;border-radius:3px;white-space:nowrap;}
+  .age.a1{background:rgba(127,160,129,.16);color:#9ac2a0;}
+  .age.a2{background:rgba(192,138,78,.16);color:var(--gold);}
+  .age.a3{background:rgba(201,163,122,.16);color:var(--a3);}
+  .age.all{background:rgba(244,244,244,.08);color:var(--muted);}
+  .rows{display:grid;grid-template-columns:118px 1fr;gap:0;}
+  .rows .k{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:8px 12px 8px 0;border-bottom:1px solid rgba(255,255,255,.04);}
+  .rows .v{font-size:13.5px;color:rgba(244,244,244,.85);padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04);line-height:1.5;}
+  .rows .v b{color:var(--white);}
+  .rows .v.hook{color:var(--gold-light);font-weight:600;font-family:'Playfair Display',serif;font-style:italic;font-size:15px;}
+  .rows .v.excl{color:#cf9077;}
+  .rows .v .copy{white-space:pre-line;background:var(--deep);border:1px dashed var(--border);border-radius:3px;padding:11px 13px;color:rgba(244,244,244,.85);font-size:13px;}
+  .rows .v .ph{color:var(--ember);font-weight:600;}
+  .menu3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:4px;}
+  .mopt{background:var(--deep);border:1px solid var(--border);border-top:2px solid var(--gold);border-radius:3px;padding:11px 12px;}
+  .mopt .mh{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.04em;color:var(--gold-light);margin-bottom:7px;}
+  .mopt .ml{font-size:11.5px;color:rgba(244,244,244,.8);line-height:1.5;}
+  .minc{margin-top:8px;font-size:12px;color:var(--accent2);line-height:1.5;}
+  .table-scroll{overflow-x:auto;margin-top:20px;}
+  table.res{width:100%;border-collapse:collapse;min-width:1080px;font-size:12px;}
+  table.res th{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--gold);padding:11px 9px;text-align:left;border-bottom:1px solid rgba(192,138,78,.3);background:rgba(192,138,78,.06);white-space:nowrap;position:sticky;top:50px;}
+  table.res td{padding:10px 9px;color:rgba(244,244,244,.78);border-bottom:1px solid var(--border);vertical-align:top;line-height:1.4;}
+  table.res td:first-child{color:var(--white);font-weight:700;white-space:nowrap;font-family:'Playfair Display',serif;}
+  .tg{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.05em;padding:2px 7px;border-radius:3px;white-space:nowrap;}
+  .tg.t{background:rgba(192,138,78,.16);color:var(--tofu);}
+  .tg.m{background:rgba(226,69,43,.16);color:var(--ember);}
+  .tg.b{background:rgba(181,4,34,.18);color:#e8677a;}
+  .tg.a1{background:rgba(127,160,129,.16);color:#9ac2a0;}
+  .tg.a2{background:rgba(192,138,78,.16);color:var(--gold);}
+  .tg.a3{background:rgba(201,163,122,.16);color:var(--a3);}
+  .tg.all{background:rgba(244,244,244,.08);color:var(--muted);}
+  footer{border-top:1px solid var(--border);padding:38px 48px;display:flex;align-items:center;gap:14px;color:var(--muted);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;flex-wrap:wrap;}
+  footer .fe{width:38px;height:38px;border-radius:50%;border:1px solid rgba(192,138,78,.4);display:flex;align-items:center;justify-content:center;color:var(--gold-light);font-family:'Playfair Display',serif;font-weight:900;}
+  @media(max-width:820px){
+    section,.stage-band,.stage-cols,.ads,.ads-label{padding-left:20px;padding-right:20px;}
+    nav{padding:0 12px;}header.top{padding:36px 20px 28px;}
+    .fx,.stage-cols,.ejes,.ages,.menu3{grid-template-columns:1fr;}
+    .rows{grid-template-columns:92px 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="emblem"><span>G</span></div>
+  <div>
+    <div class="t-k">Plan operativo de Meta Ads · Julio 2026</div>
+    <h1>GRILL<b>E</b>R Canning — Embudo por etapa y por edad</h1>
+    <div class="t-sub">TOFU · MOFU · BOFU cruzados con 3 grupos etarios (18–34 / 35–59 / 60+) y los 4 ejes del mes: Día del Amigo (lun 20/7), Ladies Night (jueves), menú mediodía y menú noche. Conversión principal: reserva por Meitre.</div>
+  </div>
+</header>
+
+<nav>
+  <a href="#embudo">Cómo funciona</a>
+  <a href="#ejes">Ejes &amp; edades</a>
+  <a class="t" href="#tofu">TOFU</a>
+  <a class="m" href="#mofu">MOFU</a>
+  <a class="b" href="#bofu">BOFU</a>
+  <a href="#tabla">Tabla resumen</a>
+</nav>
+
+<!-- ============ EMBUDO ============ -->
+<section id="embudo">
+  <div class="sec-k">01 · Cómo funciona el embudo</div>
+  <h2 class="sec">Tres etapas, un objetivo: llenar la mesa</h2>
+  <p class="sec-lead">Cada anuncio tiene un trabajo distinto según en qué momento está la persona. No le pedimos una reserva a alguien que nunca escuchó de Griller, ni le explicamos qué es Griller a alguien que ya está por reservar. Y como a Griller va gente de todas las edades, cada etapa se divide además por grupo etario, con creativo y mensaje propios.</p>
+
+  <div class="fx">
+    <div class="c t"><div class="lbl">TOFU · Descubrir</div><h4>Llegar a gente nueva</h4><p>Mostrar el fuego, el corte y el ambiente a públicos que todavía no conocen Griller. Objetivo: alcance y reproducciones de video. Todavía no pedimos nada.</p></div>
+    <div class="c m"><div class="lbl">MOFU · Considerar</div><h4>Trabajar a los que ya interactuaron</h4><p>Instalar los ejes del mes (Día del Amigo, Ladies Night, menú noche, menú mediodía) en quienes ya vieron o interactuaron. Objetivo: tráfico e interacción.</p></div>
+    <div class="c b"><div class="lbl">BOFU · Convertir</div><h4>Empujar la reserva</h4><p>Cerrar con quienes ya mostraron intención. Escasez real (el 20 se llena), CTA directo a reservar por Meitre. Objetivo: reservas y mensajes.</p></div>
+  </div>
+
+  <div class="note"><b>Regla de edad:</b> la etapa define <b>qué le pedimos</b> a la persona; la edad define <b>cómo se lo decimos</b> (creativo, tono, plataforma y horario). Un mismo eje —por ejemplo Día del Amigo— corre en las 3 etapas y en los 3 grupos, pero nunca con la misma pieza.</div>
+</section>
+
+<!-- ============ EJES + EDADES ============ -->
+<section id="ejes">
+  <div class="sec-k">02 · Ejes del mes &amp; grupos etarios</div>
+  <h2 class="sec">Qué comunicamos y a quién</h2>
+  <p class="sec-lead">Cuatro ejes comerciales atraviesan todo el embudo. Cada uno se adapta al grupo etario que mejor lo recibe, sin dejar de estar disponible para todos.</p>
+
+  <div class="ejes">
+    <div class="eje"><div class="ed">Eje 1 · Fecha</div><div class="eh">Día del Amigo</div><p>Lunes 20/7 (finde fuerte: vie 17 y sáb 18). La juntada que se merece un buen lugar. Reserva anticipada con cupo.</p></div>
+    <div class="eje"><div class="ed">Eje 2 · Recurrente</div><div class="eh">Ladies Night</div><p>Todos los jueves. Lounge, cócteles de autor y salida de amigas. El día que hoy nadie trabaja en la zona.</p></div>
+    <div class="eje"><div class="ed">Eje 3 · Mediodía</div><div class="eh">Menú mediodía</div><p>El almuerzo bien hecho: laboral y de los que tienen tiempo. Ocasión diurna, ticket medio, recurrencia.</p></div>
+    <div class="eje"><div class="ed">Eje 4 · Noche</div><div class="eh">Menú noche</div><p>La cena como experiencia: fuego, cortes, maridaje y lounge. Ocasión, ticket alto, pareja y grupos.</p></div>
+  </div>
+
+  <div class="ages">
+    <div class="agebox a1"><div class="an">Grupo A · 18–34</div><div class="at">Jóvenes · noche &amp; after</div><p>Buscan salida, estética y experiencia para mostrar. Reciben mejor Reels e Instagram, de noche. Ejes fuertes: Ladies Night y Día del Amigo.</p></div>
+    <div class="agebox a2"><div class="an">Grupo B · 35–59</div><div class="at">Adultos · la mesa que decide</div><p>Deciden dónde se come en pareja, en familia o con el equipo. Feed + Reels, FB e IG. Ejes fuertes: menú noche, Día del Amigo y almuerzo laboral.</p></div>
+    <div class="agebox a3"><div class="an">Grupo C · 60+</div><div class="at">Séniors · mediodía &amp; clásicos</div><p>Valoran atención, salón, calma y buena carne. Reciben mejor Facebook, en horario diurno. Eje fuerte: menú mediodía.</p></div>
+  </div>
+
+  <div class="note">Los textos entre <span class="ph">[corchetes]</span> son placeholders para completar con datos reales (precios, horarios, qué incluye cada menú y el beneficio de Ladies Night). Todo el resto está listo para producir.</div>
+</section>
+
+<!-- ============ TOFU ============ -->
+<div class="stage" id="tofu">
+  <div class="stage-band t">
+    <div class="big">TOFU</div>
+    <div class="obj">Descubrir · Llegar a gente nueva de la zona con el activo de marca: <b>Inspired by Fire</b>. Objetivo de campaña: alcance / ThruPlay. Todavía no pedimos reserva.</div>
+  </div>
+  <div class="stage-cols">
+    <div class="stage-col"><h4>Qué vamos a trabajar</h4><ul>
+      <li>El fuego, el corte y el ambiente como gancho visual</li>
+      <li>Teaser del Día del Amigo y de la Ladies Night</li>
+      <li>Creativo distinto por edad (noche para jóvenes, mesa para adultos, mediodía para 60+)</li>
+      <li>Video vertical corto, sin precios, puro clima</li>
+    </ul></div>
+    <div class="stage-col"><h4>Públicos a incluir</h4><ul>
+      <li>Geo: Canning + 15 km (Ezeiza, San Vicente, E. Echeverría, Monte Grande, Adrogué, Lomas)</li>
+      <li>Intereses: parrilla, steakhouse, cocina americana, salidas, cócteles, vinos</li>
+      <li>Segmentar creativo por edad: 18–34 / 35–59 / 60+</li>
+      <li>Lookalike 1–3% de clientes / reservas (si hay base)</li>
+    </ul></div>
+    <div class="stage-col excl"><h4>Públicos a excluir</h4><ul>
+      <li>Quienes ya interactuaron en los últimos 30 días (van a MOFU)</li>
+      <li>Quienes ya reservaron este mes</li>
+      <li>Fuera del radio geográfico</li>
+      <li>Staff y proveedores</li>
+    </ul></div>
+  </div>
+  <div class="ads-label">Anuncios TOFU</div>
+  <div class="ads">
+
+    <div class="ad t">
+      <div class="ad-top"><div class="ad-name">T1 · Inspired by Fire (noche)</div><div class="ad-badges"><span class="ad-badge stg">TOFU</span><span class="age a1">18–34</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Alcance / reproducciones de video en público joven</div>
+        <div class="k">Formato</div><div class="v">Reel vertical 9:16, 8–12 s. Fuego a la brasa en primer plano + salón de noche + un cóctel del lounge. Música de Griller Sounds.</div>
+        <div class="k">Hook</div><div class="v hook">"El plan de noche que tu feed venía pidiendo."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">🔥 Inspired by Fire.
+Cocina americana al fuego + lounge bar en el corazón de Canning.
+Guardá este posteo para tu próxima salida. 🍸
+📍 Griller Canning · Castex 1140</div></div>
+        <div class="k">CTA</div><div class="v">Ninguno duro (marca). Botón: "Ver más" al perfil / Reels.</div>
+        <div class="k">Plataforma</div><div class="v">Instagram Reels + Stories. Horario tarde-noche.</div>
+      </div>
+    </div>
+
+    <div class="ad t">
+      <div class="ad-top"><div class="ad-name">T2 · El fuego y el corte</div><div class="ad-badges"><span class="ad-badge stg">TOFU</span><span class="age a2">35–59</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Alcance / ThruPlay en adultos que deciden la salida</div>
+        <div class="k">Formato</div><div class="v">Video 4:5 / 9:16, 10–15 s. Sellado del corte, plano cerrado, luz tenue, emplatado. Estética brandbook (fuego, sombra difusa).</div>
+        <div class="k">Hook</div><div class="v hook">"Así se ve una buena mesa."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">Cortes selectos, cocina americana al fuego y una carta de vinos y cócteles pensada para disfrutar sin apuro.
+Griller no es una parrilla más: es una experiencia. 🔥
+📍 Canning · Castex 1140</div></div>
+        <div class="k">CTA</div><div class="v">"Ver más" (perfil / web menú).</div>
+        <div class="k">Plataforma</div><div class="v">Facebook + Instagram (feed y Reels).</div>
+      </div>
+    </div>
+
+    <div class="ad t">
+      <div class="ad-top"><div class="ad-name">T3 · El mediodía bien hecho</div><div class="ad-badges"><span class="ad-badge stg">TOFU</span><span class="age a3">60+</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Alcance en público 60+ de la zona</div>
+        <div class="k">Formato</div><div class="v">Video 4:5 luminoso: salón cálido, atención, plato servido con calma. Ritmo tranquilo, texto en pantalla grande y legible.</div>
+        <div class="k">Hook</div><div class="v hook">"El almuerzo tranquilo que te merecés, en Canning."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">Un salón cálido, buena carne y la atención de siempre.
+En Griller el mediodía se disfruta sin apuro.
+Abierto todos los días de 12 a 00 hs. 📍 Castex 1140, Canning.</div></div>
+        <div class="k">CTA</div><div class="v">"Ver más" / "Cómo llegar".</div>
+        <div class="k">Plataforma</div><div class="v">Facebook feed prioritario. Horario diurno.</div>
+      </div>
+    </div>
+
+    <div class="ad t">
+      <div class="ad-top"><div class="ad-name">T4 · Se viene el Día del Amigo</div><div class="ad-badges"><span class="ad-badge stg">TOFU</span><span class="age all">Todas · creativo por edad</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Instalar la fecha temprano (nadie en la zona la está pautando aún)</div>
+        <div class="k">Formato</div><div class="v">Reel/foto. 3 versiones del mismo mensaje: amigas de noche (18–34), grupo/reencuentro (35–59), mesa clásica de mediodía (60+).</div>
+        <div class="k">Hook</div><div class="v hook">"En julio, los amigos se juntan en Griller."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">🔥 Día del Amigo · lunes 20 de julio (y todo el finde del 17 y 18).
+La juntada que se merece un buen lugar.
+Pronto abrimos reservas. Guardá la fecha.</div></div>
+        <div class="k">CTA</div><div class="v">"Ver más" (aún sin reserva; se retomará en MOFU/BOFU).</div>
+        <div class="k">Exclusiones</div><div class="v excl">Ya reservaron para el 20.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============ MOFU ============ -->
+<div class="stage" id="mofu">
+  <div class="stage-band m">
+    <div class="big">MOFU</div>
+    <div class="obj">Considerar · A los que ya vieron o interactuaron les instalamos los <b>ejes del mes</b> con la oferta concreta. Objetivo de campaña: tráfico / interacción. Empezamos a mostrar menús, Ladies Night y Día del Amigo.</div>
+  </div>
+  <div class="stage-cols">
+    <div class="stage-col"><h4>Qué vamos a trabajar</h4><ul>
+      <li>Ladies Night del jueves (grupo 18–34)</li>
+      <li>Menú noche como experiencia (35–59)</li>
+      <li>Menú mediodía: laboral (35–59) y clásico (60+)</li>
+      <li>Día del Amigo: la juntada, con opción de menú para grupos</li>
+      <li>Prueba social: UGC / testimonios de experiencia</li>
+    </ul></div>
+    <div class="stage-col"><h4>Públicos a incluir</h4><ul>
+      <li>Vieron 50%+ de los videos TOFU (por edad)</li>
+      <li>Interactuaron con IG/FB en 30–60 días</li>
+      <li>Visitaron el perfil, la web o el menú</li>
+      <li>Lista de clientes (para consideración / recompra)</li>
+    </ul></div>
+    <div class="stage-col excl"><h4>Públicos a excluir</h4><ul>
+      <li>Ya reservaron para la fecha/ocasión comunicada</li>
+      <li>Fuera del radio geográfico</li>
+      <li>Staff y proveedores</li>
+    </ul></div>
+  </div>
+  <div class="ads-label">Anuncios MOFU</div>
+  <div class="ads">
+
+    <div class="ad m">
+      <div class="ad-top"><div class="ad-name">M1 · Ladies Night · Jueves</div><div class="ad-badges"><span class="ad-badge stg">MOFU</span><span class="age a1">18–34 · mujeres</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Instalar la Ladies Night del jueves en mujeres jóvenes y grupos de amigas</div>
+        <div class="k">Formato</div><div class="v">Reel + carrusel. Lounge, cócteles de autor, ambiente de noche, amigas brindando.</div>
+        <div class="k">Hook</div><div class="v hook">"Los jueves son nuestros."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">🍸 LADIES NIGHT · todos los jueves en Griller.
+Cócteles de autor, lounge y la mejor previa del finde.
+<span class="ph">[Beneficio de la noche: ej. 2x1 en cócteles / trago de bienvenida — completar]</span>
+📍 Canning · desde las <span class="ph">[horario]</span> hs.</div></div>
+        <div class="k">CTA</div><div class="v">"Cómo llegar" / "Enviar mensaje". (La reserva se cierra en BOFU.)</div>
+        <div class="k">Plataforma</div><div class="v">Instagram (Reels + Stories), miércoles y jueves.</div>
+      </div>
+    </div>
+
+    <div class="ad m">
+      <div class="ad-top"><div class="ad-name">M2 · La juntada de amigos</div><div class="ad-badges"><span class="ad-badge stg">MOFU</span><span class="age a1">18–34</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Posicionar a Griller como el lugar del Día del Amigo para jóvenes</div>
+        <div class="k">Formato</div><div class="v">Reel dinámico: previa, mesa para compartir, brindis, after en el lounge.</div>
+        <div class="k">Hook</div><div class="v hook">"La previa, la mesa y el after: todo en un lugar."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">🔥 Día del Amigo en Griller.
+Junten a la banda: cortes para compartir, cócteles y lounge para seguirla.
+Mesas para grupos — mejor reservar, se llena.
+📅 Lunes 20/7 y el finde del 17 y 18.</div></div>
+        <div class="k">CTA</div><div class="v">"Enviar mensaje" / "Reservar" (link Meitre).</div>
+        <div class="k">Exclusiones</div><div class="v excl">Ya reservaron para el 20.</div>
+      </div>
+    </div>
+
+    <div class="ad m">
+      <div class="ad-top"><div class="ad-name">M3 · Menú noche · la cena como experiencia</div><div class="ad-badges"><span class="ad-badge stg">MOFU</span><span class="age a2">35–59</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Instalar el menú noche en adultos que eligen dónde cenar</div>
+        <div class="k">Formato</div><div class="v">Carrusel: entrada → corte al fuego → postre → cóctel/vino. Cierra con ambiente.</div>
+        <div class="k">Hook</div><div class="v hook">"Una cena que se siente una ocasión."</div>
+        <div class="k">Menú (a completar)</div><div class="v">
+          <div class="menu3">
+            <div class="mopt"><div class="mh">Entrada</div><div class="ml"><span class="ph">[opción a definir]</span></div></div>
+            <div class="mopt"><div class="mh">Principal al fuego</div><div class="ml"><span class="ph">[corte / plato]</span></div></div>
+            <div class="mopt"><div class="mh">Postre + copa</div><div class="ml"><span class="ph">[postre + vino/cóctel]</span></div></div>
+          </div>
+          <div class="minc">Precio de la experiencia: <span class="ph">[precio por persona]</span> · noche, de <span class="ph">[horario]</span> hs.</div>
+        </div>
+        <div class="k">Copy</div><div class="v"><div class="copy">La noche en Griller es fuego, cortes selectos y una copa bien elegida.
+Descubrí nuestro menú de la noche. 🔥🍷
+Reservá tu mesa y dejanos el resto.</div></div>
+        <div class="k">CTA</div><div class="v">"Reservar" (Meitre).</div>
+      </div>
+    </div>
+
+    <div class="ad m">
+      <div class="ad-top"><div class="ad-name">M4 · Ese grupo que hay que volver a juntar</div><div class="ad-badges"><span class="ad-badge stg">MOFU</span><span class="age a2">35–59</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Día del Amigo desde el reencuentro (adultos)</div>
+        <div class="k">Formato</div><div class="v">Reel/foto emocional: mesa larga de amigos, brindis, sobremesa.</div>
+        <div class="k">Hook</div><div class="v hook">"Ese grupo que siempre dice 'nos juntamos' y nunca se junta."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">Este Día del Amigo, que sea en serio. 🔥
+Mesa para el grupo, cortes para compartir y una sobremesa que valga la pena.
+📅 Lunes 20/7 · reservá con tiempo, se llena.</div></div>
+        <div class="k">CTA</div><div class="v">"Reservar" (Meitre).</div>
+        <div class="k">Exclusiones</div><div class="v excl">Ya reservaron para el 20.</div>
+      </div>
+    </div>
+
+    <div class="ad m">
+      <div class="ad-top"><div class="ad-name">M5 · Salí a almorzar como corresponde</div><div class="ad-badges"><span class="ad-badge stg">MOFU</span><span class="age a2">35–59 · laboral</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Menú mediodía para el público laboral de la zona</div>
+        <div class="k">Formato</div><div class="v">Placa + carrusel corto. Plato del mediodía, tiempo de servicio ágil, ambiente prolijo.</div>
+        <div class="k">Hook</div><div class="v hook">"El mediodía no tiene por qué ser un touch and go."</div>
+        <div class="k">Menú (a completar)</div><div class="v">
+          <div class="menu3">
+            <div class="mopt"><div class="mh">Opción 1</div><div class="ml"><span class="ph">[plato + guarnición]</span></div></div>
+            <div class="mopt"><div class="mh">Opción 2</div><div class="ml"><span class="ph">[plato + guarnición]</span></div></div>
+            <div class="mopt"><div class="mh">Incluye</div><div class="ml"><span class="ph">[bebida / postre / café]</span></div></div>
+          </div>
+          <div class="minc">Menú mediodía: <span class="ph">[precio]</span> · de lunes a viernes, <span class="ph">[horario]</span> hs.</div>
+        </div>
+        <div class="k">Copy</div><div class="v"><div class="copy">Menú del mediodía en Griller. 🔥
+Comé bien, en un buen lugar, sin que se te haga tarde.
+📍 Canning · reservá tu mesa.</div></div>
+        <div class="k">CTA</div><div class="v">"Reservar" (Meitre) / "Enviar mensaje".</div>
+      </div>
+    </div>
+
+    <div class="ad m">
+      <div class="ad-top"><div class="ad-name">M6 · El mediodía, con tiempo</div><div class="ad-badges"><span class="ad-badge stg">MOFU</span><span class="age a3">60+</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Menú mediodía para 60+ que valoran calma y atención</div>
+        <div class="k">Formato</div><div class="v">Carrusel/foto luminoso, texto grande. Salón, plato clásico bien servido, mozo atento.</div>
+        <div class="k">Hook</div><div class="v hook">"El almuerzo, servido con tiempo y como se debe."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">En Griller, el mediodía se disfruta sin apuro.
+Buena carne, salón cálido y la atención de siempre.
+Abierto todos los días de 12 a 00 hs. 📍 Castex 1140, Canning.</div></div>
+        <div class="k">CTA</div><div class="v">"Enviar mensaje" (WhatsApp) / "Cómo llegar".</div>
+        <div class="k">Plataforma</div><div class="v">Facebook feed, horario diurno.</div>
+      </div>
+    </div>
+
+    <div class="ad m">
+      <div class="ad-top"><div class="ad-name">M7 · Lo que se siente en Griller</div><div class="ad-badges"><span class="ad-badge stg">MOFU</span><span class="age all">Todas · prueba social</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Credibilidad vía UGC / testimonios (recurso que funciona en la zona)</div>
+        <div class="k">Formato</div><div class="v">Reel estilo UGC / reseña real de cliente o microinfluencer foodie de Zona Sur.</div>
+        <div class="k">Hook</div><div class="v hook">"Fui a Griller y esto es lo que encontré."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">Cuando la experiencia habla sola. 🔥
+Cocina americana al fuego, lounge y una atención que se nota.
+Vení a vivirla. 📍 Canning · Castex 1140.</div></div>
+        <div class="k">CTA</div><div class="v">"Reservar" (Meitre).</div>
+        <div class="k">Nota</div><div class="v">Adaptar el testimonio al grupo según la edad del creador (joven/adulto).</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============ BOFU ============ -->
+<div class="stage" id="bofu">
+  <div class="stage-band b">
+    <div class="big">BOFU</div>
+    <div class="obj">Convertir · Cerramos con quienes ya mostraron intención. Mensaje directo, escasez real y <b>CTA a reservar por Meitre</b> (WhatsApp de apoyo para 60+). Objetivo de campaña: reservas / mensajes.</div>
+  </div>
+  <div class="stage-cols">
+    <div class="stage-col"><h4>Qué vamos a trabajar</h4><ul>
+      <li>Reserva del 20 (Día del Amigo) con cupo / escasez</li>
+      <li>Reserva de la Ladies Night del jueves</li>
+      <li>Reserva de cena (menú noche) y de almuerzo (mediodía)</li>
+      <li>Retargeting de quienes vieron el fuego → reserva</li>
+      <li>Gift card + Boutique como regalo del Día del Amigo</li>
+    </ul></div>
+    <div class="stage-col"><h4>Públicos a incluir</h4><ul>
+      <li>Vieron 75%+ de videos o hicieron clic en "Reservar"</li>
+      <li>Visitaron Meitre y no completaron (abandono de reserva)</li>
+      <li>Guardaron / comentaron piezas de un eje</li>
+      <li>Clientes frecuentes (lista) por edad</li>
+    </ul></div>
+    <div class="stage-col excl"><h4>Públicos a excluir</h4><ul>
+      <li>Reservas ya confirmadas del período/ocasión</li>
+      <li>Fuera del radio geográfico</li>
+      <li>Staff y proveedores</li>
+    </ul></div>
+  </div>
+  <div class="ads-label">Anuncios BOFU</div>
+  <div class="ads">
+
+    <div class="ad b">
+      <div class="ad-top"><div class="ad-name">B1 · Reservá tu mesa del 20</div><div class="ad-badges"><span class="ad-badge stg">BOFU</span><span class="age all">Todas · creativo por edad</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Reservas para el Día del Amigo (el pico del mes)</div>
+        <div class="k">Formato</div><div class="v">Placa/Reel con fecha grande + escasez. 3 variantes: amigas (18–34), grupo (35–59), mesa mediodía (60+).</div>
+        <div class="k">Hook</div><div class="v hook">"El 20 se llena. Reservá tu mesa de amigos."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">🔥 Día del Amigo · lunes 20 de julio (y finde 17–18).
+Últimos cupos para mesas de grupo.
+Reservá ahora por Meitre y asegurá tu lugar.
+📍 Griller Canning · Castex 1140.</div></div>
+        <div class="k">CTA</div><div class="v">"Reservar" → grillercanning.meitre.com</div>
+        <div class="k">Exclusiones</div><div class="v excl">Ya reservaron para el 20.</div>
+      </div>
+    </div>
+
+    <div class="ad b">
+      <div class="ad-top"><div class="ad-name">B2 · Este jueves, tu lugar en la Ladies Night</div><div class="ad-badges"><span class="ad-badge stg">BOFU</span><span class="age a1">18–34 · mujeres</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Reservas para la Ladies Night del jueves</div>
+        <div class="k">Formato</div><div class="v">Placa/Reel con día fijo + beneficio. Cócteles y lounge.</div>
+        <div class="k">Hook</div><div class="v hook">"Este jueves salimos. Reservá la mesa."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">🍸 LADIES NIGHT · jueves en Griller.
+<span class="ph">[Beneficio — completar]</span> · lounge y cócteles de autor.
+Juntá a las chicas y reservá tu lugar.
+📍 Canning · desde las <span class="ph">[horario]</span> hs.</div></div>
+        <div class="k">CTA</div><div class="v">"Reservar" (Meitre) / "Enviar mensaje" (WhatsApp).</div>
+        <div class="k">Timing</div><div class="v">Correr martes a jueves de cada semana.</div>
+      </div>
+    </div>
+
+    <div class="ad b">
+      <div class="ad-top"><div class="ad-name">B3 · Reservá tu cena</div><div class="ad-badges"><span class="ad-badge stg">BOFU</span><span class="age a2">35–59</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Reservas de menú noche (cena de fin de semana / ocasión)</div>
+        <div class="k">Formato</div><div class="v">Carrusel/placa: corte al fuego + ambiente + CTA claro.</div>
+        <div class="k">Hook</div><div class="v hook">"Reservá la mesa. Del fuego nos ocupamos nosotros."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">🔥 La noche en Griller.
+Cortes selectos, cocina al fuego y lounge bar.
+Reservá tu mesa para esta semana por Meitre.
+📍 Canning · Castex 1140.</div></div>
+        <div class="k">CTA</div><div class="v">"Reservar" → grillercanning.meitre.com</div>
+      </div>
+    </div>
+
+    <div class="ad b">
+      <div class="ad-top"><div class="ad-name">B4 · Vení a almorzar</div><div class="ad-badges"><span class="ad-badge stg">BOFU</span><span class="age a3">60+ · y 35–59</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Reservas / visitas de menú mediodía</div>
+        <div class="k">Formato</div><div class="v">Placa simple, legible: plato del mediodía + precio + horario + botón.</div>
+        <div class="k">Hook</div><div class="v hook">"Tu mesa del mediodía te está esperando."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">Menú del mediodía en Griller. 🔥
+<span class="ph">[precio]</span> · de lunes a viernes, <span class="ph">[horario]</span> hs.
+Reservá o escribinos y vení a almorzar tranquilo.
+📍 Castex 1140, Canning.</div></div>
+        <div class="k">CTA</div><div class="v">"Enviar mensaje" (WhatsApp) para 60+ · "Reservar" (Meitre) para 35–59.</div>
+        <div class="k">Plataforma</div><div class="v">Facebook (60+) + Instagram (35–59), horario diurno.</div>
+      </div>
+    </div>
+
+    <div class="ad b">
+      <div class="ad-top"><div class="ad-name">B5 · Ya viste el fuego</div><div class="ad-badges"><span class="ad-badge stg">BOFU</span><span class="age all">Retargeting · todas</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Cerrar a quienes vieron creativos de marca pero no reservaron</div>
+        <div class="k">Formato</div><div class="v">Reel corto recordatorio + CTA. Reusa el mejor plano de fuego del mes.</div>
+        <div class="k">Hook</div><div class="v hook">"Ya viste el fuego. Ahora sentate a la mesa."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">Lo pensaste, lo guardaste… ahora reservá. 🔥
+Griller Canning te espera: fuego, cortes y lounge.
+Tu mesa está a un clic.</div></div>
+        <div class="k">CTA</div><div class="v">"Reservar" → grillercanning.meitre.com</div>
+        <div class="k">Público</div><div class="v">Viewers 75%+ y visitantes de Meitre sin reserva (últimos 14 días).</div>
+      </div>
+    </div>
+
+    <div class="ad b">
+      <div class="ad-top"><div class="ad-name">B6 · Regalale fuego (Gift Card + Boutique)</div><div class="ad-badges"><span class="ad-badge stg">BOFU</span><span class="age a2">35–59 · regalo</span></div></div>
+      <div class="rows">
+        <div class="k">Objetivo</div><div class="v">Ventas de gift card y Boutique como regalo del Día del Amigo (canal sin competencia local)</div>
+        <div class="k">Formato</div><div class="v">Placa/carrusel: gift card + cortes al vacío + vinos de la Boutique.</div>
+        <div class="k">Hook</div><div class="v hook">"¿El amigo que tiene todo? Regalale fuego."</div>
+        <div class="k">Copy</div><div class="v"><div class="copy">🎁 Día del Amigo en Griller.
+Gift card para vivir la experiencia — o cortes premium y vinos de nuestra Boutique para regalar.
+El regalo que sí se disfruta.</div></div>
+        <div class="k">CTA</div><div class="v">"Comprar" (gift card Meitre) / "Enviar mensaje" (Boutique).</div>
+        <div class="k">Timing</div><div class="v">Reforzar del 10 al 19 de julio.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============ TABLA RESUMEN ============ -->
+<section id="tabla">
+  <div class="sec-k">03 · Tabla resumen</div>
+  <h2 class="sec">Los 17 anuncios del mes de un vistazo</h2>
+  <p class="sec-lead">Cada pieza, su etapa, su grupo etario, el eje que trabaja, el formato, el gancho y el CTA. Para producir y cargar en Ads Manager.</p>
+  <div class="table-scroll">
+    <table class="res">
+      <thead><tr>
+        <th>#</th><th>Anuncio</th><th>Etapa</th><th>Edad</th><th>Eje</th><th>Formato</th><th>Hook</th><th>CTA</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>T1</td><td>Inspired by Fire (noche)</td><td><span class="tg t">TOFU</span></td><td><span class="tg a1">18–34</span></td><td>Marca</td><td>Reel</td><td>"El plan de noche que tu feed pedía"</td><td>Ver más</td></tr>
+        <tr><td>T2</td><td>El fuego y el corte</td><td><span class="tg t">TOFU</span></td><td><span class="tg a2">35–59</span></td><td>Marca</td><td>Video</td><td>"Así se ve una buena mesa"</td><td>Ver más</td></tr>
+        <tr><td>T3</td><td>El mediodía bien hecho</td><td><span class="tg t">TOFU</span></td><td><span class="tg a3">60+</span></td><td>Mediodía</td><td>Video</td><td>"El almuerzo tranquilo que te merecés"</td><td>Ver más</td></tr>
+        <tr><td>T4</td><td>Se viene el Día del Amigo</td><td><span class="tg t">TOFU</span></td><td><span class="tg all">Todas</span></td><td>Día del Amigo</td><td>Reel/foto x3</td><td>"En julio, los amigos se juntan en Griller"</td><td>Ver más</td></tr>
+        <tr><td>M1</td><td>Ladies Night · Jueves</td><td><span class="tg m">MOFU</span></td><td><span class="tg a1">18–34</span></td><td>Ladies Night</td><td>Reel + carrusel</td><td>"Los jueves son nuestros"</td><td>Mensaje</td></tr>
+        <tr><td>M2</td><td>La juntada de amigos</td><td><span class="tg m">MOFU</span></td><td><span class="tg a1">18–34</span></td><td>Día del Amigo</td><td>Reel</td><td>"La previa, la mesa y el after"</td><td>Reservar</td></tr>
+        <tr><td>M3</td><td>Menú noche · experiencia</td><td><span class="tg m">MOFU</span></td><td><span class="tg a2">35–59</span></td><td>Menú noche</td><td>Carrusel</td><td>"Una cena que se siente una ocasión"</td><td>Reservar</td></tr>
+        <tr><td>M4</td><td>Volver a juntar al grupo</td><td><span class="tg m">MOFU</span></td><td><span class="tg a2">35–59</span></td><td>Día del Amigo</td><td>Reel/foto</td><td>"Que esta vez sea en serio"</td><td>Reservar</td></tr>
+        <tr><td>M5</td><td>Almorzá como corresponde</td><td><span class="tg m">MOFU</span></td><td><span class="tg a2">35–59</span></td><td>Mediodía</td><td>Placa + carrusel</td><td>"El mediodía no tiene que ser un touch and go"</td><td>Reservar</td></tr>
+        <tr><td>M6</td><td>El mediodía, con tiempo</td><td><span class="tg m">MOFU</span></td><td><span class="tg a3">60+</span></td><td>Mediodía</td><td>Carrusel/foto</td><td>"Servido con tiempo y como se debe"</td><td>Mensaje</td></tr>
+        <tr><td>M7</td><td>Lo que se siente en Griller</td><td><span class="tg m">MOFU</span></td><td><span class="tg all">Todas</span></td><td>Prueba social</td><td>Reel UGC</td><td>"Fui a Griller y esto encontré"</td><td>Reservar</td></tr>
+        <tr><td>B1</td><td>Reservá tu mesa del 20</td><td><span class="tg b">BOFU</span></td><td><span class="tg all">Todas</span></td><td>Día del Amigo</td><td>Placa/Reel x3</td><td>"El 20 se llena. Reservá"</td><td>Reservar (Meitre)</td></tr>
+        <tr><td>B2</td><td>Ladies Night · reservá el jueves</td><td><span class="tg b">BOFU</span></td><td><span class="tg a1">18–34</span></td><td>Ladies Night</td><td>Placa/Reel</td><td>"Este jueves salimos. Reservá"</td><td>Reservar / Mensaje</td></tr>
+        <tr><td>B3</td><td>Reservá tu cena</td><td><span class="tg b">BOFU</span></td><td><span class="tg a2">35–59</span></td><td>Menú noche</td><td>Carrusel/placa</td><td>"Del fuego nos ocupamos nosotros"</td><td>Reservar (Meitre)</td></tr>
+        <tr><td>B4</td><td>Vení a almorzar</td><td><span class="tg b">BOFU</span></td><td><span class="tg a3">60+</span></td><td>Mediodía</td><td>Placa</td><td>"Tu mesa del mediodía te espera"</td><td>Mensaje / Reservar</td></tr>
+        <tr><td>B5</td><td>Ya viste el fuego (retargeting)</td><td><span class="tg b">BOFU</span></td><td><span class="tg all">Todas</span></td><td>Marca</td><td>Reel corto</td><td>"Ahora sentate a la mesa"</td><td>Reservar (Meitre)</td></tr>
+        <tr><td>B6</td><td>Regalale fuego (Gift + Boutique)</td><td><span class="tg b">BOFU</span></td><td><span class="tg a2">35–59</span></td><td>Día del Amigo</td><td>Placa/carrusel</td><td>"El amigo que tiene todo"</td><td>Comprar / Mensaje</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note" style="margin-top:22px;"><b>Cómo leer el mes:</b> arranca TOFU la 1ª semana (instalar marca + teaser de fecha), MOFU corre en paralelo desde la semana 2 sobre quienes ya vieron, y BOFU concentra fuerza del <b>10 al 20 de julio</b> (Día del Amigo) y todos los <b>jueves</b> (Ladies Night). El menú mediodía y noche corren estables todo el mes.</div>
+</section>
+
+<footer>
+  <div class="fe">G</div>
+  <span>GRILLER Canning · Plan de Meta Ads · Julio 2026 · Inspired by Fire · Conversión: reserva Meitre</span>
+</footer>
+
+</body>
+</html>
